@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:44:13 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/10/27 16:19:45 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/10/27 16:29:50 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_printf(const char *input, ...)
 
 int main (void)
 {
-	printf("Coucou Hibou\n");
-	ft_printf("Coucou Hibou\n");
+	printf("Coucou Hibou\nahahaha\n");
+	ft_printf("Coucou Hibou\nyouhouuu\n");
 	return (0);
 }
