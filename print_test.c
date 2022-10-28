@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/10/28 13:39:48 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/10/28 15:44:53 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,18 @@
 
 int main (void)
 {
-	int	bonjour;
+	int		digit;
+	char	caractere;
 
-	bonjour = 42;
-	printf("Coucou Hibou\nahahaha\n");
-	ft_printf("Coucou Hibou\nyouhouuu\n");
-	printf("Coucou monsieur %d\n", bonjour);
-	ft_printf("Coucou monsieur %d\n", bonjour);
+	digit = 42;
+	caractere = 'a';
+	printf("-----START TEST-----\n");
+	printf("return %d\n", printf("origin // Coucou Hibou // "));
+	printf("return %d\n", ft_printf("custom // Coucou Hibou // "));
+//	printf("return %d\n", printf("origin // digit %d // ", digit));
+//	printf("return %d\n", ft_printf("custom // digit %d // ", digit));
+	printf("return %d\n", printf("origin // caractere %c // ", caractere));
+	printf("return %d\n", ft_printf("custom // caractere %c // ", caractere));
+	printf("-----END TEST-----\n");
 	return (0);
 }
