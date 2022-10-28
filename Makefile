@@ -32,5 +32,6 @@ test: all
 		${CC} ${CFLAGS} print_test.c ft_printf.h  -L. -lftprintf
 		./a.out
 		rm a.out && rm *.gch && rm *.o
+		make fclean
 
 .PHONY:		all clean fclean re
