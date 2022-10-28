@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   print_test.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 12:30:20 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/10/28 13:04:35 by aschaefe         ###   ########.fr       */
+/*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
+/*   Updated: 2022/10/28 13:21:34 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef PRINTF_H
-# define PRINTF_H
 
-#include "./libft/libft.h"
-#include <stdio.h>
-#include <stdarg.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
-int	ft_printf(const char *input, ...);
-
-/*
-typedef struct s_list
+int main (void)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
-*/
+	int	bonjour;
 
-#endif
+	bonjour = 42;
+	printf("Coucou Hibou\nahahaha\n");
+	ft_printf("Coucou Hibou\nyouhouuu\n");
+	printf("Coucou monsieur %d\n", bonjour);
+	ft_printf("Coucou monsieur %d\n", bonjour);
+	return (0);
+}

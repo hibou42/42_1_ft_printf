@@ -1,5 +1,3 @@
-LIBFTPATH = ./libft
-
 SRCS	=	ft_printf.c \
 
 OBJS	= ${SRCS:.c=.o}
@@ -17,14 +15,21 @@ CFLAGS	= -Wall -Werror -Wextra
 all:		${NAME}
 
 ${NAME}:	${OBJS}
+			make bonus -C ./libft
+			cp ./libft/libft.a ${NAME}
 			ar rcs ${NAME} ${OBJS}
 
-clean:		
+clean:
 		${RM} ${OBJS}
 
 fclean:		clean
 		${RM} ${NAME}
 
 re:			fclean all
+
+test: all
+		${CC} ${CFLAGS} print_test.c ft_printf.h  -L. -lftprintf
+		./a.out
+		rm a.out && rm *.gch && rm *.o
 
 .PHONY:		all clean fclean re
