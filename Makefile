@@ -21,6 +21,7 @@ ${NAME}:	${OBJS}
 
 clean:
 		${RM} ${OBJS}
+		make fclean -C ./libft
 
 fclean:		clean
 		${RM} ${NAME}
