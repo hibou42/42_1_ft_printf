@@ -1,4 +1,6 @@
 SRCS	=	ft_printf.c \
+			ft_c.c \
+			ft_s.c \
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -29,9 +31,9 @@ fclean:		clean
 re:			fclean all
 
 test: all
-		${CC} ${CFLAGS} print_test.c ft_printf.h  -L. -lftprintf
+		${CC} ${CFLAGS} ${SRCS} printf_test.c -L. -lftprintf
 		./a.out
-		rm a.out && rm *.gch && rm *.o
+		rm a.out &&  rm *.o
 		make fclean
 
 .PHONY:		all clean fclean re

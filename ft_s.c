@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_s.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 12:30:20 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 17:40:38 by aschaefe         ###   ########.fr       */
+/*   Created: 2022/11/04 17:34:24 by aschaefe          #+#    #+#             */
+/*   Updated: 2022/11/04 17:48:39 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef PRINTF_H
-# define PRINTF_H
 
-#include "./libft/libft.h"
-#include <stdio.h>
-#include <stdarg.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
-int	ft_printf(const char *input, ...);
-int	ft_c(int job);
-int ft_s(char * str);
-
-/*
-typedef struct s_list
+int ft_s(char * str)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
-*/
+	int	i;
 
-#endif
+	i = 0;
+	while (str[i])
+	{
+		ft_putchar_fd(str[i], 1);
+		i++;
+	}
+	return (i - 1);
+}
