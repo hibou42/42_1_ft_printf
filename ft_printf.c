@@ -6,13 +6,11 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:44:13 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 17:49:21 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/04 18:00:46 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-
 
 int	if_forest(char c, va_list valist)
 {
@@ -25,10 +23,10 @@ int	if_forest(char c, va_list valist)
 		i += ft_s(va_arg(valist, char *));
 //	else if (c == 'p')
 //		i += ft_p(va_arg(valist, void *));
-//	else if (c == 'd')
-//		i += ft_d(va_arg(valist, int));
-//	else if (c == 'i')
-//		i += ft_i;
+	else if (c == 'd')
+		i += ft_di(va_arg(valist, int));
+	else if (c == 'i')
+		i += ft_di(va_arg(valist, int));
 //	else if (c == 'u')
 //		i += ft_u;
 //	else if (c == 'x')
