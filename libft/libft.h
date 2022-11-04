@@ -6,17 +6,17 @@
 /*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 21:55:27 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/10/21 14:50:18 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:22:48 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<stdio.h> //printf
-# include<stddef.h> //size_t
-# include<string.h> // str...
-# include<ctype.h> //toupper tolower is...
-# include<stdlib.h> // atoi
+# include<stdio.h>
+# include<stddef.h>
+# include<string.h>
+# include<ctype.h>
+# include<stdlib.h>
 # include<unistd.h>
 
 typedef struct s_list
