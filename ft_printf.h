@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 12:30:20 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 18:03:31 by aschaefe         ###   ########.fr       */
+/*   Created: 2022/11/04 19:58:04 by aschaefe          #+#    #+#             */
+/*   Updated: 2022/11/04 20:07:55 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PRINTF_H
@@ -19,15 +19,7 @@
 
 int	ft_printf(const char *input, ...);
 int	ft_c(int job);
-int ft_s(char * str);
-int ft_di(int job);
-
-/*
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
-*/
+int	ft_s(char *str);
+int	ft_di(int job);
 
 #endif

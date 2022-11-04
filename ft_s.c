@@ -6,13 +6,13 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:34:24 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 17:48:39 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:08:47 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_s(char * str)
+int	ft_s(char *str)
 {
 	int	i;
 

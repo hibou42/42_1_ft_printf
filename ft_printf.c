@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:44:13 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 18:07:59 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:53:57 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_printf(const char *input, ...)
 	va_list		valist;
 	int			i;
 	int			res;
-	
+
 	va_start(valist, input);
 	i = 0;
 	res = 0;
@@ -54,7 +54,7 @@ int	ft_printf(const char *input, ...)
 	{
 		if (input[i] == '%')
 		{
-			res += if_forest(input[i + 1], valist); 
+			res += if_forest(input[i + 1], valist);
 			i += 2;
 		}
 		else
