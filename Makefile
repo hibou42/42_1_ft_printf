@@ -2,6 +2,8 @@ SRCS	=	ft_printf.c \
 			ft_c.c \
 			ft_s.c \
 			ft_di.c \
+			ft_u.c \
+			ft_p.c \
 
 OBJS	= ${SRCS:.c=.o}
 
