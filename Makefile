@@ -1,9 +1,9 @@
 SRCS	=	ft_printf.c \
-			ft_c.c \
-			ft_s.c \
-			ft_di.c \
-			ft_u.c \
-			ft_p.c \
+			c.c \
+			s.c \
+			di.c \
+			u.c \
+			p.c \
 			ft_puthex.c \
 
 OBJS	= ${SRCS:.c=.o}
