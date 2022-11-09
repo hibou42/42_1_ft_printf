@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s.c                                                :+:      :+:    :+:   */
+/*   core_di.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 17:34:24 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 20:08:47 by aschaefe         ###   ########.fr       */
+/*   Created: 2022/11/04 17:51:14 by aschaefe          #+#    #+#             */
+/*   Updated: 2022/11/09 12:07:47 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	s(char *str)
+int	core_di(int job)
 {
-	int	i;
+	int		i;
+	char	*res;
 
+	res = ft_itoa(job);
 	i = 0;
-	while (str[i])
+	while (res[i])
 	{
-		ft_putchar_fd(str[i], 1);
+		ft_putchar_fd(res[i], 1);
 		i++;
 	}
-	return (i - 1);
+	return (i);
 }

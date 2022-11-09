@@ -18,11 +18,11 @@
 # include <unistd.h>
 
 int	ft_printf(const char *input, ...);
-int	c(int job);
-int	s(char *str);
-int	di(int job);
-int	u(unsigned int job);
-int	p(unsigned long long job);
+int	core_c(int job);
+int	core_s(char *str);
+int	core_di(int job);
+int	core_u(unsigned int job);
+int	core_p(unsigned long long job);
 int	ft_puthex(unsigned int nbr);
 
 #endif

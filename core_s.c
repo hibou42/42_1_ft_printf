@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   p.c                                                :+:      :+:    :+:   */
+/*   core_s.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 17:35:01 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 13:35:13 by aschaefe         ###   ########.fr       */
+/*   Created: 2022/11/04 17:34:24 by aschaefe          #+#    #+#             */
+/*   Updated: 2022/11/04 20:08:47 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	p(unsigned long long job)
+int	core_s(char *str)
 {
 	int	i;
-	char	*ptr;
-	
-	ptr = ft_itoa(job);
-	write(1, "0x", 2);
+
 	i = 0;
-//	ft_putnbr_fd(nb / 16, 1);
-//	ft_putnbr_fd(nb % 16, 1);
-	while (ptr[i])
+	while (str[i])
 	{
-		ft_putchar_fd(ptr[i], 1);
+		ft_putchar_fd(str[i], 1);
 		i++;
 	}
-	return (i + 2);
+	return (i - 1);
 }
