@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:44:13 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 13:34:46 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 14:25:35 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ int	if_forest(char c, va_list valist)
 	else if (c == 'u')
 		i += core_u(va_arg(valist, unsigned int));
 	else if (c == 'x')
-		i += ft_puthex(va_arg(valist, unsigned int));
-//	else if (c == 'X')
-//		i += core_X;
+		i += core_x(va_arg(valist, unsigned int));
+	else if (c == 'X')
+		i += core_X(va_arg(valist, unsigned int));
 	else
 	{
 		ft_putchar_fd(c, 1);

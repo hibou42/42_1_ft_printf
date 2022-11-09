@@ -6,13 +6,13 @@
 /*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:21:49 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 13:36:25 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 14:18:38 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int nbr)
+int	ft_puthex(unsigned long long nbr)
 {
 	int	res;
 
