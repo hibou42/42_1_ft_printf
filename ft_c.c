@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:03:09 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 19:51:21 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:06:37 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,6 @@ int	ft_c(int job)
 
 	i = 0;
 	ft_putchar_fd(job, 1);
+	i++;
 	return (i);
 }
