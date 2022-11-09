@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 14:26:40 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 15:35:23 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,18 @@ int main (void)
 	char		caractere;
 	char		*str = "YEAH";
 	unsigned int	uint;
+	float		floti;
 	
 	digit = 42;
 	i = 21;
 	caractere = 'a';
 	uint = 84;
+	floti = 42.42f;
 	printf("-----START TEST-----\n");
 	printf("return %d\n", printf("origin // Coucou Hibou // "));
 	printf("return %d\n", ft_printf("custom // Coucou Hibou // "));
+	printf("return %d\n", printf("origin // %% // "));
+	printf("return %d\n", ft_printf("custom // %% // "));
 	printf("return %d\n", printf("origin // digit %d // ", digit));
 	printf("return %d\n", ft_printf("custom // digit %d // ", digit));
 	printf("return %d\n", printf("origin // digit %i // ", i));
@@ -43,6 +47,8 @@ int main (void)
 	printf("return %d\n", ft_printf("custom // hexa %x // ", uint));
 	printf("return %d\n", printf("origin // HEXA %X // ", uint));
 	printf("return %d\n", ft_printf("custom // HEXA %X // ", uint));
+	printf("return %d\n", printf("origin // ''fake %f'' // ", floti));
+	printf("return %d\n", ft_printf("custom // ''fake %f'' // ", floti));
 	printf("-----END TEST-----\n");
 	return (0);
 }
