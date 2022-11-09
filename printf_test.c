@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/07 23:47:39 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 13:33:00 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,9 @@ int main (void)
 	printf("return %d\n", ft_printf("custom // unsig_int %u // ", uint));
 	printf("return %d\n", printf("origin // pointer %p // ", str));
 	printf("return %d\n", ft_printf("custom // pointer %p // ", str));
+	printf("return %d\n", printf("origin // hexa %x // ", uint));
+	printf("return %d\n", ft_printf("custom // hexa %x // ", uint));
+	
 	printf("-----END TEST-----\n");
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 19:58:04 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 12:37:26 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/09 13:31:13 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -23,5 +23,6 @@ int	ft_s(char *str);
 int	ft_di(int job);
 int	ft_u(unsigned int job);
 int	ft_p(unsigned long long job);
+int	ft_puthex(unsigned int nbr);
 
 #endif

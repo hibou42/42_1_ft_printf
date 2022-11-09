@@ -4,6 +4,7 @@ SRCS	=	ft_printf.c \
 			ft_di.c \
 			ft_u.c \
 			ft_p.c \
+			ft_puthex.c \
 
 OBJS	= ${SRCS:.c=.o}
 
