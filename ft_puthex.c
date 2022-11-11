@@ -6,7 +6,7 @@
 /*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:21:49 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 14:18:38 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 11:42:40 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_puthex(unsigned long long nbr)
 		res++;
 		if (nbr <= 9)
 			ft_putchar_fd(nbr + '0', 1);
-		else 
+		else
 			ft_putchar_fd((nbr - 10) + 'a', 1);
 	}
 	return (res);

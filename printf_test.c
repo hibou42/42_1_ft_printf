@@ -6,16 +6,16 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 15:35:23 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 12:11:03 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int main (void)
+int	main(void)
 {
-	int		digit;
-	int		i;
+	int			digit;
+	int			i;
 	char		caractere;
 	char		*str = "YEAH";
 	unsigned int	uint;
@@ -24,7 +24,7 @@ int main (void)
 	digit = 42;
 	i = 21;
 	caractere = 'a';
-	uint = 84;
+	uint = 543;
 	floti = 42.42f;
 	printf("-----START TEST-----\n");
 	printf("return %d\n", printf("origin // Coucou Hibou // "));

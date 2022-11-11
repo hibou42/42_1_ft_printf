@@ -5,7 +5,7 @@ SRCS	=	ft_printf.c \
 			core_u.c \
 			core_p.c \
 			core_x.c \
-			core_X.c \
+			core_xx.c \
 			ft_puthex.c \
 
 OBJS	= ${SRCS:.c=.o}
