@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 19:58:04 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 18:47:06 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 19:25:51 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -22,7 +22,7 @@ int	ft_printf(const char *input, ...);
 int	core_c(int job);
 int	core_s(char *str);
 int	core_di(int job);
-int	core_u(unsigned int job);
+int	core_u(unsigned int job, int i);
 int	core_p(unsigned long long job);
 int	core_x(unsigned int nbr);
 int	core_xx(unsigned int nbr);
