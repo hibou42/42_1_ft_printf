@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 19:58:04 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 18:17:56 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:47:06 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FT_PRINTF_H
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stdarg.h>
 # include <unistd.h>
+# include <limits.h>
 
 int	ft_printf(const char *input, ...);
 int	core_c(int job);
