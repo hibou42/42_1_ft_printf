@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:34:24 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/04 20:08:47 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:16:21 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,15 @@ int	core_s(char *str)
 	int	i;
 
 	i = 0;
+	if (!str)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	while (str[i])
 	{
 		ft_putchar_fd(str[i], 1);
 		i++;
 	}
-	return (i - 1);
+	return (i);
 }

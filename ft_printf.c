@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:44:13 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 13:51:37 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:03:32 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,9 @@ int	ft_printf(const char *input, ...)
 	{
 		if (input[i] == '%')
 		{
-			res += if_forest(input[i + 1], valist);
-			i += 2;
+			i++;
+			res += if_forest(input[i], valist);
+			i++;
 		}
 		else
 		{

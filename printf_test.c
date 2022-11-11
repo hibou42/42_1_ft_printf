@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:07:53 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 12:11:03 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:33:35 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	main(void)
 {
-	int			digit;
-	int			i;
-	char		caractere;
-	char		*str = "YEAH";
+	int				digit;
+	int				i;
+	char			caractere;
+	char			*str = "YEAH";
 	unsigned int	uint;
-	float		floti;
-	
+	float			floti;
+
 	digit = 42;
 	i = 21;
 	caractere = 'a';
@@ -37,7 +37,7 @@ int	main(void)
 	printf("return %d\n", ft_printf("custom // digit %i // ", i));
 	printf("return %d\n", printf("origin // caractere %c // ", caractere));
 	printf("return %d\n", ft_printf("custom // caractere %c // ", caractere));
-	printf("return %d\n", printf("origin // string %s //", str));
+	printf("return %d\n", printf("origin // string %s // ", str));
 	printf("return %d\n", ft_printf("custom // string %s // ", str));
 	printf("return %d\n", printf("origin // unsig_int %u // ", uint));
 	printf("return %d\n", ft_printf("custom // unsig_int %u // ", uint));

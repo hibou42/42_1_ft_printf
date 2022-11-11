@@ -6,7 +6,7 @@
 /*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:06:52 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 12:22:10 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:03:39 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	core_x(unsigned int nbr)
 	res = 0;
 	if (nbr >= 16)
 	{
-		res += ft_puthex(nbr / 16);
-		res += ft_puthex(nbr % 16);
+		res += core_x(nbr / 16);
+		res += core_x(nbr % 16);
 	}
 	if (nbr < 16)
 	{

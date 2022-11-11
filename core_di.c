@@ -6,7 +6,7 @@
 /*   By: aschaefe <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:51:14 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/09 12:07:47 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:18:22 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,15 @@ int	core_di(int job)
 
 	res = ft_itoa(job);
 	i = 0;
+	if (! res)
+	{
+		return (0);
+	}
 	while (res[i])
 	{
 		ft_putchar_fd(res[i], 1);
 		i++;
 	}
+	free(res);
 	return (i);
 }

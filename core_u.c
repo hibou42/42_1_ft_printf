@@ -6,7 +6,7 @@
 /*   By: aschaefe <aschaefe@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:58:19 by aschaefe          #+#    #+#             */
-/*   Updated: 2022/11/11 11:43:41 by aschaefe         ###   ########.fr       */
+/*   Updated: 2022/11/11 18:37:11 by aschaefe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,11 @@
 
 int	core_u(unsigned int job)
 {
-	int		i;
-	char	*res;
+	static int	i;
 
-	res = ft_itoa(job);
-	i = 0;
-	while (res[i])
-	{
-		ft_putchar_fd(res[i], 1);
-		i++;
-	}
+	if (job >= 10)
+		core_u(job / 10);
+	ft_putchar_fd(job % 10 + '0', 1);
+	i++;
 	return (i);
 }
